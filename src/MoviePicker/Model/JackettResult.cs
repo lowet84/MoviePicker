@@ -26,6 +26,7 @@ namespace MoviePicker.Model
     {
         public string Name { get; }
         public int Year { get; }
+        public int Seeders { get; set; }
         public IEnumerable<JackettResult> Results { get; }
 
         public JackettResultGroup(string name, int year, IEnumerable<JackettResult> results)
@@ -33,6 +34,7 @@ namespace MoviePicker.Model
             Name = name;
             Year = year;
             Results = results;
+            Seeders = results.Sum(d => d.Seeders);
         }
 
         public override string ToString()

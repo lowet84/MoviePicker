@@ -1,4 +1,6 @@
-﻿ReactDOM.render(
-    <h1>Hello World!</h1>,
+﻿var MovieBox = require('./MovieBox');
+
+ReactDOM.render(
+    <MovieBox url="/api/values"/>,
     document.getElementById('content')
 );
