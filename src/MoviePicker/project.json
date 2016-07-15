@@ -1,6 +1,6 @@
 {
   "commands": {
-    "web": "Microsoft.AspNet.Server.Kestrel"
+    "web": "Microsoft.AspNet.Server.Kestrel --server.urls http://0.0.0.0:5000"
   },
   "compilationOptions": {
     "emitEntryPoint": true
@@ -10,7 +10,6 @@
     "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
     "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
     "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
-    "Microsoft.AspNet.WebApi.Client": "5.2.3",
     "Microsoft.Extensions.Configuration.FileProviderExtensions": "1.0.0-rc1-final"
   },
   "exclude": [
